@@ -1,0 +1,20 @@
+CREATE TABLE Customers (
+  CustomerId INT GENERATED ALWAYS AS IDENTITY,
+  Email STRING NOT NULL,
+  RowVersion BINARY,
+  AccountCode STRING,
+  FirstName STRING,
+  LastName STRING,
+  FirstAddress STRING,
+  City STRING,
+  Country STRING,
+  ZipCode STRING,
+  Website STRING,
+  Active BOOLEAN NOT NULL,
+  Enrrolled INT NOT NULL,
+  PhoneNumber STRING,
+  MobileNumber STRING,
+  FaxNumber STRING,
+  PRIMARY KEY (CustomerId),
+  UNIQUE (Email)
+)
