@@ -1,0 +1,10 @@
+
+CREATE TABLE Orders(
+    OrderId INT PRIMARY KEY NOT NULL,
+    Code STRING NULL,
+    Date TIMESTAMP NOT NULL,
+    Type STRING NULL,
+    ItemName STRING NULL,
+    Status STRING NULL,
+    Total DECIMAL(18, 2) NOT NULL
+);
